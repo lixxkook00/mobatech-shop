@@ -18,25 +18,25 @@ const SidebarMobile = () => {
       {state && (
         <div className="sidebar-mobile">
           <div className="list">
-            <NavLink onClick={handleItem} className="item" to="/">
+            <a className="item">
               Dashboard
-            </NavLink>
-            {/* <NavLink onClick={handleItem} className="item" to="/egg-baskets">
+            </a>
+            {/* <a className="item">
               <Popup />
               Egg baskets
-            </NavLink> */}
-            <NavLink onClick={handleItem} className="item" to="/my-assets">
+            </a> */}
+            <a className="item">
               My Assets
-            </NavLink>
-            <NavLink onClick={handleItem} className="item" to="/marketplace">
-              Marketplace
-            </NavLink>
-            <NavLink onClick={handleItem} className="item" to="/staking">
+            </a>
+            <a className="item">
+              Shop
+            </a>
+            <a className="item">
               Staking
-            </NavLink>
-            {/* <NavLink onClick={handleItem} className="item" to="/vesting">
+            </a>
+            {/* <a className="item">
               Vesting
-            </NavLink> */}
+            </a> */}
           </div>
         </div>
       )}

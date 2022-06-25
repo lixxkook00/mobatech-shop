@@ -12,20 +12,23 @@ import DetailPopup from 'components/popup/detail'
 const Layout = () => {
   return (
     <>
-      {window.innerWidth >= 1024 && <Sidebar />}
       {window.innerWidth < 1024 && <SidebarMobile />}
       {window.innerWidth < 1024 && <MenuMobile />}
       <DetailPopup />
       <main>
+        <div className="comming-soon">
+          COMMING SOON !!!
+        </div>
         {/* <Firefly /> */}
         {/* {window.innerWidth < 1024 && (
           <div className="logo">
-            <img src={require('assets/img/logo.png')} alt="error png" />
+          <img src={require('assets/img/logo.png')} alt="error png" />
           </div>
         )} */}
         <Header />
         <Outlet />
       </main>
+      {window.innerWidth >= 1024 && <Sidebar />}
     </>
   )
 }

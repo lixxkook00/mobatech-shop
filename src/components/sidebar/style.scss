@@ -15,6 +15,8 @@
     margin-bottom: 16px;
     img {
       padding: 15px 20px;
+      width:100%;
+      height: auto;
     }
   }
   a {
@@ -31,7 +33,7 @@
   a:last-child {
     // border-bottom: 2px solid #eb8825;
   }
-  a.active {
+  a.hehe {
     background-image: linear-gradient(90deg,#1dd2ff 10%,#ca6aff 90%);
   }
 }

@@ -7,6 +7,20 @@
   z-index: -1;
 }
 main {
+  .comming-soon{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.632);
+    color: #69B9E4;
+    font-weight: 900;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   padding-left: 245px;
   
   overflow: hidden;

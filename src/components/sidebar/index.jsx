@@ -17,13 +17,9 @@ const Sidebar = () => {
       >
         Dashboard
       </NavLink>
-      {/* <NavLink to="/egg-baskets">
-        Egg baskets
-      </NavLink> */}
-      <NavLink to="my-assets">My Assets</NavLink>
-      <NavLink to="marketplace">Marketplace</NavLink>
-      <NavLink to="staking">Staking</NavLink>
-      {/* <NavLink to="vesting">Vesting</NavLink> */}
+      <NavLink to="">My Assets</NavLink>
+      <NavLink to="">Shop</NavLink>
+      <NavLink className="hehe" to="staking">Staking</NavLink>
     </div>
   )
 }

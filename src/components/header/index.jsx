@@ -51,11 +51,11 @@ const Header = () => {
       <div className="hd-items">
         <div className="item">
           <img src={require('assets/img/Meat icon.png')} alt="error png" />
-          <span className="primary-tex-yellow font-weight-700">{balanceMEAT}</span>
+          <span className="primary-tex-yellow font-weight-700">0.00000</span>
         </div>
         <div className="item">
           <img src={require('assets/img/coin2.png')} alt="error png" />
-          <span className="primary-tex-yellow font-weight-700">{balanceBUSD}</span>
+          <span className="primary-tex-yellow font-weight-700">0.00000</span>
         </div>
       </div>
       <div className="button" onClick={() => handleConnectWallet()}>

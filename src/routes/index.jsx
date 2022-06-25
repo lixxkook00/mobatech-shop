@@ -33,7 +33,7 @@ const Router = () => {
       <Route path="/" element={<Layout />}>
 
 
-        <Route path="/" element={<DashboardPage />}>
+        <Route path="/" element={<StakingPage />}>
           <Route path="/:_addressForReflink" element={<AccountDashboard/>} />
           <Route index element={<AccountDashboard />} />
           <Route path="account" element={<AccountDashboard />} />

@@ -63,18 +63,6 @@ const Account = () => {
                   {listItem.map((item,idx) => { 
                     return <CartStaking setDetails={setDetails} setClaimPopup={setClaimPopup} itemInfo={item} key={idx} img={'R174 1.png'} />
                   })}
-                  {/* <CartStaking setClaimPopup={setClaimPopup} img={'R174 1.png'} />
-                  <CartStaking setClaimPopup={setClaimPopup} img={'R229 1.png'} />
-                  <CartStaking setClaimPopup={setClaimPopup} img={'R015 1.png'} />
-                  <CartStaking setClaimPopup={setClaimPopup} img={'R336 1.png'} />
-                  <CartStaking setClaimPopup={setClaimPopup} img={'R391.png'} />
-                  <CartStaking setClaimPopup={setClaimPopup} img={'R174 1.png'} />
-                  <CartStaking setClaimPopup={setClaimPopup} img={'R229 1.png'} />
-                  <CartStaking setClaimPopup={setClaimPopup} img={'R015 1.png'} />
-                  <CartStaking setClaimPopup={setClaimPopup} img={'R336 1.png'} />
-                  <CartStaking setClaimPopup={setClaimPopup} img={'R391.png'} />
-                  <CartStaking setClaimPopup={setClaimPopup} img={'R174 1.png'} />
-                  <CartStaking setClaimPopup={setClaimPopup} img={'R229 1.png'} /> */}
                 </div>
               </div>
             </div>
@@ -108,7 +96,7 @@ const Account = () => {
                       <div className="coin">
                         <span className="primary-tex-yellow font-weight-700">0</span>
                         <span className="primary-tex-gray font-weight-700 font-size-18">
-                          MEAT
+                          OBA
                         </span>
                       </div>
                     </div>
@@ -122,7 +110,7 @@ const Account = () => {
                       <div className="coin">
                         <span className="primary-tex-yellow font-weight-700">0</span>
                         <span className="primary-tex-gray font-weight-700 font-size-18">
-                          MEAT
+                          OBA
                         </span>
                       </div>
                     </div>
@@ -136,7 +124,7 @@ const Account = () => {
                       <div className="coin">
                         <span className="primary-tex-yellow font-weight-700">0</span>
                         <span className="primary-tex-gray font-weight-700 font-size-18">
-                          MEAT
+                          OBA
                         </span>
                       </div>
                     </div>
@@ -199,7 +187,7 @@ const Account = () => {
                   Monthly Rewards :
                 </div>
                 <div className="claim-content-line-content">
-                  {rewards} MEAT
+                  {rewards} OBA
                 </div>
               </div>
 
