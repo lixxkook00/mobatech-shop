@@ -69,10 +69,10 @@ const Account = () => {
             <div className="col-xl-4">
               <div className="staking-wrapper mb-5">
                 <div className="item right">
-                  <h1 className="primary-tex-yellow">NFT Staked</h1>
+                  <h1 className="primary-tex-yellow">Token Staked</h1>
                   <div className="coin">
                     <span className="primary-tex-yellow font-weight-700">0</span>
-                    <span className="primary-tex-gray font-weight-700 font-size-18">NFT</span>
+                    <span className="primary-tex-gray font-weight-700 font-size-18">OBA</span>
                   </div>
                 </div>
                 <div className="item right">
