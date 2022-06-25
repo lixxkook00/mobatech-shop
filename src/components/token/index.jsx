@@ -2,7 +2,7 @@ import React from 'react'
 import { useLocation } from 'react-router-dom'
 
 import './style.scss'
-import Popup from 'components/popup/comingsoon'
+// import Popup from 'components/popup/comingsoon'
 
 const Token = () => {
   const { pathname } = useLocation()
@@ -48,7 +48,7 @@ const Token = () => {
           </div>
         </p>
         <div className="claim-button">
-          <Popup />
+          {/* <Popup /> */}
           <button>Claim</button>
         </div>
       </div>

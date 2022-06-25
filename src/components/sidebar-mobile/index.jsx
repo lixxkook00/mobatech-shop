@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 import './style.scss'
 import { toggleMenu } from 'selectors'
 import globalSlice from 'reducers/globalSlice'
-import Popup from 'components/popup/comingsoon'
+// import Popup from 'components/popup/comingsoon'
 
 const SidebarMobile = () => {
   const dispatch = useDispatch()

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import './style.scss'
-import Popup from 'components/popup/comingsoon'
+// import Popup from 'components/popup/comingsoon'
 import CartOnMarket from 'components/CartOnMarket'
 
 const OnMarket = () => {

@@ -1,8 +1,8 @@
 import React from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
-
+// import PopupButton from 'components/popup/button'
 import './style.scss'
-import Popup from 'components/popup/comingsoon'
+// import Popup from 'components/popup/comingsoon'
 
 const Sidebar = () => {
   const { pathname } = useLocation()
@@ -12,14 +12,16 @@ const Sidebar = () => {
         <img src={require('assets/img/logo.png')} alt="error png" />
       </div>
       <NavLink
-        to="/"
+        to="staking"
         className={'item' + (pathname === '/account' ? ' active' : '')}
       >
         Dashboard
+        {/* <PopupButton /> */}
       </NavLink>
-      <NavLink to="">My Assets</NavLink>
-      <NavLink to="">Shop</NavLink>
+      <NavLink to="staking">My Assets</NavLink>
+      <NavLink to="staking">Shop</NavLink>
       <NavLink className="hehe" to="staking">Staking</NavLink>
+
     </div>
   )
 }

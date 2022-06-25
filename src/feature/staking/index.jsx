@@ -1,28 +1,46 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import { NavLink, Outlet, useLocation } from 'react-router-dom'
-
 import './style.scss'
 
 const Staking = () => {
   const { pathname } = useLocation()
+
+  const [toggle,setToggle] = useState(false)
+
+  useEffect(() => {
+    setTimeout(() => {
+      setToggle(false)
+    },1900)
+  },[toggle])
+
   return (
     <div id="staking">
       <div className="tab">
-        <NavLink
+        <div onClick={ () => {setToggle(true)}}
           to="account"
           className={'item' + (pathname === '/staking' ? ' active' : '')}
         >
           Staking
-        </NavLink>
+          {/* <PopupButton /> */}
+        </div>
 
-        <NavLink to="staked" className="item">
+        <div onClick={ () => {setToggle(true)}} to="account" className="item">
+          {/* <PopupButton /> */}
           Staked
-        </NavLink>
+        </div>
 
-        <NavLink to="leaderboard" className="item">
+        <div onClick={ () => {setToggle(true)}} to="account" className="item">
           Leaderboard
-        </NavLink>
+        </div>
+
         
+        {
+          toggle
+          &&
+          <div className="comming-soon">
+            COMMING SOON
+          </div>
+        }
       </div>
       <Outlet />
     </div>

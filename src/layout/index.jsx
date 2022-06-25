@@ -7,18 +7,18 @@ import SidebarMobile from 'components/sidebar-mobile'
 import Header from 'components/header'
 // import Firefly from 'components/firefly'
 import MenuMobile from 'components/menu-mobile' 
-import DetailPopup from 'components/popup/detail'
-
+// import DetailPopup from 'components/popup/detail'
+// import Popup from 'components/popup'
 const Layout = () => {
   return (
     <>
       {window.innerWidth < 1024 && <SidebarMobile />}
       {window.innerWidth < 1024 && <MenuMobile />}
-      <DetailPopup />
+      {/* <DetailPopup /> */}
       <main>
-        <div className="comming-soon">
+        {/* <div className="comming-soon">
           COMMING SOON !!!
-        </div>
+        </div> */}
         {/* <Firefly /> */}
         {/* {window.innerWidth < 1024 && (
           <div className="logo">
@@ -29,6 +29,7 @@ const Layout = () => {
         <Outlet />
       </main>
       {window.innerWidth >= 1024 && <Sidebar />}
+      {/* <Popup /> */}
     </>
   )
 }

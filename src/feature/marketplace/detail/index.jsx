@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom'
 
 import './style.scss'
 import Items from 'assets/data/items.json'
-import Popup from 'components/popup/comingsoon'
+// import Popup from 'components/popup/comingsoon'
 // import SetItems from 'assets/data/set-items.json'
 
 const Detail = () => {
@@ -14,11 +14,11 @@ const Detail = () => {
       <div className="tab">
         <div className="item">
           Egg basket
-          <Popup />
+          {/* <Popup /> */}
         </div>
         <div className="item">
           Item
-          <Popup />
+          {/* <Popup /> */}
         </div>
       </div>
       <div className="title-box">
@@ -42,7 +42,7 @@ const Detail = () => {
             <div className="button">
               <button>
                 Buy
-                <Popup />
+                {/* <Popup /> */}
               </button>
             </div>
           </div>
