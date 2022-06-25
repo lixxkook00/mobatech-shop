@@ -1,0 +1,62 @@
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+  height: 70px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  width: 100%;
+  // &::before {
+  //   content: '';
+  //   position: absolute;
+  //   top: 8px;
+  //   left: 8px;
+  //   right: 8px;
+  //   bottom: 8px;
+  //   filter: blur(2px);
+  // }
+  &-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: absolute;
+    right: 10px;
+    top: 0;
+
+    img{
+      height: 80%;
+      width: auto;
+    }
+  }
+  .nav-icon {
+    margin: 0;
+    width: 30px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 30;
+  }
+  .nav-icon:after,
+  .nav-icon:before,
+  .nav-icon div {
+    background-color: #fff;
+    border-radius: 3px;
+    content: '';
+    display: block;
+    height: 2px;
+    margin: 7px 0;
+    transition: all 0.2s ease-in-out;
+  }
+  .nav-icon.closed:before {
+    transform: translateY(3px) translateX(-2px) rotate(135deg);
+    width: 17px;
+  }
+  .nav-icon.closed:after {
+    transform: translateY(-3px) translateX(-2px) rotate(-135deg);
+    width: 17px;
+  }
+}

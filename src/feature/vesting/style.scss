@@ -1,0 +1,43 @@
+@import 'assets/scss/valuable';
+@import 'assets/scss/animation';
+@import 'assets/scss/responsive';
+
+#vesting {
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  .tab {
+    display: flex;
+    justify-content: center;
+    margin: 40px auto 0;
+    .item {
+      display: block;
+      background: url('/assets/img/button2.png') no-repeat center center / 100%
+        96%;
+      text-align: center;
+      height: 48px;
+      width: 200px;
+      line-height: 48px;
+      margin-left: 48px;
+      margin-right: 48px;
+      font-size: 16px;
+      text-decoration: none;
+      color: #fff;
+    }
+    .item.active {
+      background: url('/assets/img/button2-active.png') no-repeat center center /
+        100% 96%;
+    }
+  }
+  @include media('screen', '<laptop') {
+    .tab {
+      flex-direction: column;
+      align-items: center;
+      .item {
+        margin-top: 6px;
+        margin-bottom: 6px;
+        width: 264px;
+      }
+    }
+  }
+}

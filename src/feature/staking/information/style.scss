@@ -1,0 +1,76 @@
+@import 'assets/scss/responsive';
+
+#staking {
+  .information {
+
+    .row{
+      padding-top: 30px;
+    }
+    h3 {
+      margin: 32px 16px;
+      font-size: 32px;
+    }
+    .info-box {
+      display: flex;
+      justify-content: center;
+      .left {
+        flex-basis: 50%;
+        margin-left: 20px;
+        background-color: rgba(26, 56, 101, 0.22);
+        border: 1px solid #92a2be;
+        padding: 10px;
+        p {
+          font-size: 14px;
+          margin-bottom: 24px;
+        }
+      }
+      .right {
+        flex-basis: 50%;
+        margin-left: 20px;
+        table {
+          background-color: rgba(26, 56, 101, 0.22);
+          width: 100%;
+          tr {
+            min-width: 120px;
+            th,
+            td {
+              border: 1px solid #92a2be;
+              min-width: 120px;
+              padding: 8px 6px;
+              text-align: center;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @include media('screen', '<laptop') {
+    .information {
+      .info-box {
+        flex-direction: column;
+        .left {
+          flex-basis: 100%;
+          margin-right: 20px;
+          margin-bottom: 20px;
+        }
+        .right {
+          margin-right: 20px;
+          width: calc(100% - 40px);
+          flex-basis: 100%;
+          margin-bottom: 20px;
+          table {
+            tr {
+              min-width: 60px;
+              th,
+              td {
+                min-width: 60px;
+                padding: 6px 4px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

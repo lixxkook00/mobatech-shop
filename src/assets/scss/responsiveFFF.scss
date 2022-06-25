@@ -1,0 +1,371 @@
+#staking .tab .item{
+    color: #fff;
+    font-weight: 800 !important;
+}
+
+
+@media (min-width: 1000px) and (max-width: 1444px) {
+    .mt-90{
+        margin-top: 40px !important;
+    }
+}
+
+
+/* PC only */
+@media (min-width: 1024px) {
+    .hide-on-pc {
+        display: none !important;
+    }
+
+}
+
+/* Tablet to PC low resolution */
+
+@media (min-width: 985px) and (max-width: 1200px) {
+    .intro-skin{
+        margin-top: 16px;
+    }
+}
+
+
+/* Tablet Only */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .hidden-tl{
+        display: none !important;
+    }
+
+    .App{
+        #dashboard .content-my-wallet{
+            background-image: url('../../assets/img/vav02.png');
+        }
+
+        .tab{
+            width: unset;
+        }
+    }
+
+    .App .itemCart-staking {
+        height: 360px;
+        padding: 30px 43px !important;
+    }
+}
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+    .hidden-t {
+        display: none;
+    }
+
+    .hidden-m-t {
+        display: none !important;
+    }
+
+    
+
+    .App{
+
+        .staking-account{
+            .col-xl-8{
+                margin-top: 30px;
+            }
+        }
+
+        main{
+            padding-top: 70px;
+        }
+        
+        .itemCart{
+            padding: 50px 20px 30px;
+
+            .itemCart-img{
+                height: 40%;
+            }
+            
+            .itemCart-content{
+                height: 60%;
+            }
+        }
+
+        #marketplace .main .summary .container .item{
+            width: 100%;
+
+            .img{
+                height: unset;
+
+                img{
+                    height: auto;
+                    width: 100%;
+                }
+            }
+        }
+
+        #marketplace .main .summary .item .infor{
+            top: 50%;
+        }
+
+        #marketplace .main .summary .item .infor > span{
+            font-size: 22px;
+        }
+
+        .staking-account{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        .itemCart-staking{
+            height: 360px;
+            padding: 30px;
+        }
+
+        .ref{
+            display: block;
+            flex: 1;
+            width: 200px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-overflow: ellipsis;
+        }
+
+        #staking .claim-content{
+            width: 80%;
+            height: 34%;
+        }
+    }
+
+}
+
+/* Mobile Only */
+@media (max-width: 739px) {
+    .hidden-m {
+        display: none !important;
+    }
+
+    main{
+        padding-top: 70px;
+    }
+
+    .itemCart-info-line-price-text{
+        font-size: 12px;
+    }
+
+    .App{
+        .claim-content{
+            height: unset !important;
+        }
+
+        #staking .claim-wrapper{
+            width: 90%;
+        }
+        #staking {
+
+            .claim-content{
+                width: 90%;
+                height: 34%;
+            }
+
+            .claim-content-title{
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            .claim-content-input input{
+                height: 25px;
+            }
+
+            .claim-content-input{
+                margin: 8px 0;
+            }
+
+            .claim-content-value{
+                font-size: 16px;
+            }
+
+            .claim-content-btn{
+                height: 30px;
+            }
+
+            .claim-close{
+                top: 0%;
+                right: 0%;
+            }
+        }
+    }
+
+    #dashboard{
+
+        .content-my-wallet{
+            background-image: url('../../assets/img/frame 3.png');
+        }
+
+        .account{
+
+            .content-wrap{
+                width: 100%;
+            }
+            .item2{
+                display: flex;
+            }
+
+            .ref{
+                display: block;
+                flex: 1;
+                width: 200px;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                text-overflow: ellipsis;
+            }
+        }
+    }
+
+    #marketplace .main .summary .item{
+        height:unset;
+    }
+
+    #marketplace .main .summary .item > .img{
+        height: 150px;
+    }
+    #marketplace .main .summary .item .infor{
+        top: 31%;
+    }
+
+    .filter{
+        padding: 12px !important;
+
+        &-title{
+            font-size: 22px !important;
+            margin-bottom: 12px;
+        }
+
+        .select{
+            width: 100% !important;
+            margin: 0 0 15px !important;
+        }
+    }
+    #marketplace .main .filter .input {
+        margin: 0;
+        width: 100%;
+    }
+
+    .tab{
+        width: 100%;
+    }
+    #staking .box-staking .item{
+        padding: 12px;
+    }
+    h1{
+        font-size: 26px !important;
+    }
+
+    #staking .box-staking .item .info{
+        margin: 17px 0;
+        flex-direction: column;
+
+        &-item{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    #staking .tab .item{
+        width: 80%;
+        font-weight: 800;
+        font-size: 20px !important;
+    }
+
+    .box-token,.box-nfts{
+        width: 100% !important;
+        padding: 0 12px;
+        flex-direction: column;
+
+        .left{
+            width: 100%;
+            img{
+                width: 80%;
+                height: auto;
+            }
+        }
+
+        .right{
+            padding-left: 0 !important;
+            p{
+                display: flex;
+                justify-content: space-between;
+
+                div{
+                    min-width: 55px;
+                }
+            }
+        }
+    }
+
+    #vesting .box-nfts .right .claim-button,
+    #vesting .box-token .right .claim-button{
+        height: 72px;
+        width: auto;
+
+        button{
+            font-weight: 800;
+            font-size: 22px;
+        }
+    }
+
+    #popup-detail .wrapper .box-detail{
+        flex: 1;
+        overflow-y: auto;
+    }
+
+    #popup-detail .wrapper{
+        width: 90%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    #popup-detail .wrapper .box-detail .container{
+        margin: 0;
+    }
+    #popup-detail .detail-name{
+        font-size: 26px;
+        padding-bottom: 20px;
+    }
+    #marketplace .main .filter{
+        flex-direction: column;
+        align-items: flex-start;
+        .filter-icon{
+            margin-top: 10px;
+            margin-left: 0;
+        }
+    }
+}
+
+/* 500*/
+@media (min-width: 500px) and (max-width: 742px) {
+    .hidden-500plus {
+        display: none !important;
+
+        
+    }
+}
+
+
+@media (max-width: 500px) {
+    .hidden-500{
+        display: none !important;
+    }
+}
+
+// Motherfucking Iphone 5S
+@media (max-width: 375px) {
+    .main-content{
+        width: 100% !important;
+    }
+
+    .content-my-wallet{
+        background-image: url('../../assets/img/frame 3.png');
+        padding: 40px !important;
+    }
+}

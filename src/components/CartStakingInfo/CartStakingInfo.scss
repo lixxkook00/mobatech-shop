@@ -1,0 +1,41 @@
+.itemCart.stackingInfo{
+    height: 460px;
+    margin-top: 10px;
+
+    &:hover{
+        .itemCart-info-line-text.tup::after{
+            transform: translate(-50%,-10%);
+            opacity: 1;
+        }
+    }
+
+    .itemCart-img{
+        height: 40%;
+    }
+
+    .itemCart-info-line{
+        font-size: 13px;
+    }
+
+    .itemCart-btn{
+        width: 60%;
+    }
+
+    .itemCart-info-line-text{
+        position: relative;
+    }
+
+    .itemCart-info-line-text.tup::after{
+        content: "Total Unrealized Profit";
+        position: absolute;
+        bottom: -70%;
+        left: 50%;
+        width: 200px;
+        text-align: center;
+        font-size: 9px;
+        color: yellow;
+        transition: all 0.5s ease-in-out;
+        transform: translate(-50%,-100%);
+        opacity: 0;
+    }
+}

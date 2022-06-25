@@ -1,0 +1,28 @@
+[
+  {
+    "set": "flame",
+    "increse_3": {
+      "health": 360,
+      "attack": 250,
+      "defense": 200
+    },
+    "increse_5": {
+      "health": 360,
+      "attack": 250,
+      "defense": 200
+    }
+  },
+  {
+    "set": "devil",
+    "increse_3": {
+      "health": 360,
+      "attack": 250,
+      "defense": 200
+    },
+    "increse_5": {
+      "health": 360,
+      "attack": 250,
+      "defense": 200
+    }
+  }
+]

@@ -1,0 +1,261 @@
+@import 'assets/scss/valuable';
+@import 'assets/scss/responsive';
+
+#staking {
+
+  .staking-wrapper{
+    // height: 800px;
+    // overflow-y: auto;
+  }
+
+  .box-staking {
+    margin-top: 50px;
+
+    .item {
+      padding: 10px 12px;
+      border-radius: 16px;
+      background-color: rgba(26, 77, 101, 0.22);
+      border: 2px solid #6B84FC;
+      margin-top: 20px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      &-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 5px 0;
+
+        .coin{
+          margin-top: 0 !important;
+        }
+
+        .primary-btn{
+          width: 120px;
+          height: 30px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+      }
+
+      h1 {
+        font-size: 26px;
+        // line-height: 30px;
+        vertical-align: middle;
+        font-weight: 700;
+      }
+
+      .info {
+        margin: 42px 0;
+        color: $blue-color;
+        display: flex;
+        &-item {
+          flex-basis: 50%;
+          font-size: 12px;
+          .title {
+            line-height: 26px;
+          }
+          .coin span {
+            font-size: 24px;
+            padding-right: 8px;
+          }
+        }
+      }
+      .button {
+        // background: url('/assets/img/button4.png') no-repeat center / 100% 100%;
+        margin-top: 8px;
+        height: 45px;
+        position: relative;
+        button {
+          height: 100%;
+          width: 100%;
+          color: rgba(136, 157, 182, 0.7);
+          background-color: transparent;
+          border: none;
+          outline: none;
+          font-size: 14px;
+          text-shadow: 1px 1px 2px #000;
+        }
+      }
+      .button.active {
+        // background: url('/assets/img/button4-active.png') no-repeat center /
+        //   100% 100%;
+        opacity: 1;
+      }
+      .coin {
+        margin-top: 0px;
+        color: $blue-color;
+        span {
+          font-size: 18px;
+          padding-right: 8px;
+        }
+      }
+    }
+    .left {
+      .wrapper-custom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .claim-button {
+        // width: 110px;
+        // height: 36px;
+        // background: url('/assets/img/button5.png') no-repeat center / 100% 100%;
+        button {
+          height: 100%;
+          width: 100%;
+          color: #fff;
+          background-color: transparent;
+          border: none;
+          outline: none;
+          font-size: 14px;
+          text-shadow: 1px 1px 2px #000;
+        }
+      }
+    }
+
+    .right {
+      position: relative;
+      min-height: 100px;
+      > svg {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        fill: #00abd7;
+        filter: drop-shadow(0 0 2px #00abd7);
+      }
+      .rank-box {
+        color: $blue-color;
+        margin-top: 20px;
+        display: flex;
+        > span {
+          display: flex;
+          align-items: center;
+          flex-basis: 50%;
+          // font-size: 14px;
+          > span {
+            margin-left: 8px;
+            // font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  .claim{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.563);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-close{
+      position: absolute;
+      top: 0%;
+      right: 0%;
+
+      i{
+        color:#7d93ff;
+        font-size: 30px;
+        transition: all 0.5s ease-in-out;
+      }
+
+      &:hover{
+        cursor: pointer;
+
+        i{
+          color:#7c8cde;
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    &-wrapper{
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-content{
+      // background-image: url('../../../assets/img/Group 98.png');
+      // background-position: center center;
+      // background-size: contain;
+      // background-repeat: no-repeat;
+      position: relative;
+      background-color: #35065bc1;
+      border: 2px solid #02FDFF;
+      border-radius: 20px;
+      width: 40%;
+      // height: 40%;
+      padding: 30px 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      &-title{
+        font-size: 30px;
+        font-weight: 700;
+      }
+
+      &-line{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 16px;
+        margin: 8px 0;
+      }
+
+      &-line-name{
+        font-weight: 600;
+      }
+
+      &-line-content{
+        position: relative;
+      }
+
+      &-btn{
+        width: 60%;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 16px;
+      }
+      
+    }
+    // select
+    &-select{
+      position: relative;
+      height: 40px;
+      width: 140px;
+      background-color: transparent;
+      color: #02FDFF;
+      border: 2px solid rgba(108, 165, 214, 0.8);
+      border-radius: 10px;
+      padding: 0 8px;
+      -moz-appearance:none; /* Firefox */
+      -webkit-appearance:none; /* Safari and Chrome */
+      appearance:none;
+    }
+
+    .claim-select-icon{
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+      color: #02FDFF;
+    }
+  }
+}

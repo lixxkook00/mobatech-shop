@@ -1,0 +1,99 @@
+.itemCart{
+    background-image: url(../../assets/img/frame.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 360px;
+    color: #fff;
+    padding: 30px;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 10px;
+
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.05);
+
+        .itemCart-img{
+            img{
+                filter: drop-shadow(3px 3px 3px #70d3fe92);
+                -webkit-filter: drop-shadow(3px 3px 3px #70d3fe92);
+            }
+        }
+    }
+
+    &-img{
+        height: 50%;
+
+        img{
+            height: 100%;
+            width: auto;
+        }
+    }
+
+    &-content{
+        height: 50%;
+        display: flex;
+        flex-direction: column;
+        // justify-content: space-between;
+    }
+
+    &-info{
+
+        &-line{
+            display: flex;
+            justify-content: center;
+            font-size: 10px;
+            margin: 8px 0;
+
+            &-icon{
+                margin-right: 4px;
+            }
+        }
+
+        &-line-price{
+            align-items: center;
+
+            &-icon{
+                width: 18px;
+
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            &-text{
+                font-size: 13px;
+                font-weight: 800;
+                background-image: linear-gradient(#fddd1c, #f59424);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+
+    &-btns{
+        margin-top: 4px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &-btn{
+        border: 1px solid #00FDFF;
+        border-radius: 12px;
+        background: linear-gradient(0deg, #00FDFF -49.48%, #22C3FF -33.42%, #4190FF -17.12%, #5B64FF -0.47%, #7040FF 16.18%, #8124FF 32.82%, #8D10FF 49.5%, #9404FF 66.22%, #9600FF 83.14%, #00FDFF 173.84%, #22C3FF 188.52%, #4190FF 203.45%, #5B64FF 218.64%, #7040FF 233.88%, #8124FF 249.11%, #8D10FF 264.34%, #9404FF 279.68%, #9600FF 295.15%);
+        font-size: 12px !important;
+        // padding: 3px;
+        width: 100px;
+        margin-bottom: 4px;
+        font-weight: 600;
+        transition: all 0.5s ease-in-out;
+
+        &:hover{
+            cursor: pointer;
+            transform: scale(.95);
+        }
+    }
+}

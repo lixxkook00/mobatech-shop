@@ -1,0 +1,40 @@
+@import 'assets/scss/valuable';
+@import 'assets/scss/animation';
+
+.sidebar-mobile {
+  background-image: linear-gradient(180deg,#1a1c3b 10%,#1b4b6a 90%)!important;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-top: 70px;
+  
+  z-index: 10;
+  animation: sidebar-mobile 1s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  .list {
+    width: 100%;
+    .item {
+      display: block;
+      font-size: 24px;
+      color: $white-color;
+      padding: 16px 0;
+      text-align: left;
+      font-weight: 500;
+      width: 100%;
+      padding-left: 20px;
+      border-bottom: 1px solid hsla(0,0%,87%,.353);
+    }
+
+    .item.active{
+      font-weight: 700;
+      -webkit-text-fill-color: transparent;
+      -webkit-background-clip: text;
+      background-image: linear-gradient(90deg, #1dd2ff 10%, #ca6aff 90%);
+    }
+  }
+}

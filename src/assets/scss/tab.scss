@@ -1,0 +1,33 @@
+@import './responsive';
+
+.tab {
+  display: flex;
+  width: 920px;
+  justify-content: center;
+  margin: 40px auto 0;
+  .item {
+    background: url('/assets/img/button2.png') no-repeat center center / contain;
+    text-align: center;
+    height: 48px;
+    width: 200px;
+    line-height: 48px;
+    margin-left: 48px;
+    margin-right: 48px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+  }
+  .active {
+    background: url('/assets/img/button2-active.png') no-repeat center center /
+      contain;
+  }
+  @include media('screen', '<tablet') {
+    .tab2 {
+      .item2 {
+        margin-left: 6px;
+        margin-right: 6px;
+        width: 140px;
+      }
+    }
+  }
+}

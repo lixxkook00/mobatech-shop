@@ -1,0 +1,137 @@
+@import 'assets/scss/valuable';
+@import 'assets/scss/responsive';
+
+#dashboard {
+  color: $white-color;
+  margin-bottom: 40px;
+  h3 {
+    font-weight: 700;
+    font-size: 26px;
+    margin: 20px 0 8px;
+    font-weight: 700;
+  }
+  
+  h3:not(:first-child){
+    margin-top: 50px;
+  }
+  .content {
+    border-radius: 12px;
+    background-color: rgba(26, 77, 101, 0.22);
+    border: 2px solid #6B84FC;
+    padding: 8px 12px;
+
+    &-my-wallet{
+      border: none;
+      background-color: transparent;
+      background-image: url(../../../assets/img/bg-wallet.png);
+      background-repeat: no-repeat;
+      background-position: top center;
+      background-size: 100% 100%;
+      padding: 30px;
+      margin-top: 30px;
+    }
+
+    &-wrap{
+      margin: auto;
+      width: 96%;
+    }
+    .item {
+      margin-bottom: 16px;
+      font-size: 16px;
+      display: flex;
+      justify-content: space-between;
+
+      &:first-child{
+        margin-top: 16px;
+      }
+
+      &-content{
+        display: flex;
+        font-weight: 700;
+        
+        .unit{
+          display: flex;
+          min-width: 60px;
+        }
+      }
+
+      label {
+        width: 200px;
+        color: #fff;
+        font-size: 18px;
+        font-weight: 800;
+      }
+      span {
+        margin-left: 8px;
+      }
+      .unit {
+        flex-basis: 30px;
+      }
+    }
+    .item2 {
+      width: 100%;
+      margin-bottom: 16px;
+      font-size: 18px;
+      background-color: rgba(21, 48, 84, 0.743);
+      border: 2px solid #6B84FC;
+      border-radius: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 8px 20px;
+      text-align: center;
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+      user-select: none;
+      label {
+        color: #bbbdbf;
+        cursor: pointer;
+      }
+      
+      .btn-copy{
+        flex: 1;
+        display: flex;
+        justify-content: flex-end;
+        transition: all 0.5s ease-in-out;
+        svg {
+          fill: $white-color;
+          transition: all 0.5s ease-in-out;
+        }
+
+        &:hover{
+          cursor: pointer;
+          svg{
+            transform: scale(1.2);
+            fill: #EBC126;
+          }
+        }
+      }
+    }
+  }
+  .content.overview {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    .item {
+      margin: 8px 0;
+      font-size: 30px;
+      font-weight: 700;
+      
+      label {
+        color: $white-color;
+      }
+
+      img{
+        height: 50px;
+        width: auto;
+      }
+    }
+  }
+
+  @include media('screen', '<laptop') {
+    .hd-items{
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+}

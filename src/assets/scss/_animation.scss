@@ -1,0 +1,52 @@
+@keyframes changeWidth {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes popup-animation {
+  from {
+    opacity: 0;
+    transform: translate(-50%, calc(-50% + 200px));
+  }
+  40% {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes sidebar-mobile {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes show-detail-popup-main {
+  0% {
+    opacity: 0;
+    transform: translateY(100%) scale(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+@keyframes close-detail-popup-main {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(100%) scale(0);
+  }
+}

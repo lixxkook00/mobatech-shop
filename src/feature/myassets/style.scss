@@ -1,0 +1,62 @@
+@import 'assets/scss/responsive';
+
+#myassets {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  .tab {
+    display: flex;
+    width: 920px;
+    justify-content: center;
+    margin: 40px auto 0;
+    .item {
+      background: url('/assets/img/button2.png') no-repeat center center /
+        contain;
+      text-align: center;
+      height: 48px;
+      width: 200px;
+      line-height: 48px;
+      margin-left: 48px;
+      margin-right: 48px;
+      font-size: 16px;
+      text-decoration: none;
+      color: #001F92;
+      font-weight: 800;
+    }
+    .item.active {
+      background: url('/assets/img/button2-active.png') no-repeat center center /
+        contain;
+    }
+  }
+  @include media('screen', '<laptop') {
+    .tab {
+      width: 100%;
+      .item {
+        font-size: 14px;
+      }
+    }
+  }
+  @include media('screen', '<tablet') {
+    .tab {
+      .item {
+        margin-left: 6px;
+        margin-right: 6px;
+        width: 140px;
+      }
+    }
+    .filter {
+      .select {
+        margin-bottom: 8px;
+      }
+      .input {
+        margin-left: 8px;
+        margin-right: 8px;
+        width: calc(100% - 16px);
+      }
+    }
+  }
+}

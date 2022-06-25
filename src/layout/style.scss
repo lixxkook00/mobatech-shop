@@ -1,0 +1,29 @@
+@import 'assets/scss/responsive';
+
+.App {
+  // background-image: linear-gradient(180deg, #00123a 10%, #010c10 90%);
+  background: url('/assets/img/background.jpg') no-repeat center / 100% 100%;
+  background-attachment: fixed;
+  z-index: -1;
+}
+main {
+  padding-left: 245px;
+  
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  height: 100vh;
+  overflow-y: scroll;
+  @include media('screen', '<laptop') {
+    padding-left: 0;
+    .logo {
+      text-align: center;
+      img {
+        width: 140px;
+      }
+    }
+  }
+}
+::-webkit-scrollbar {
+  width: 0;
+}

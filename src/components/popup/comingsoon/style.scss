@@ -1,0 +1,22 @@
+@import 'assets/scss/animation';
+#popup {
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  .popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: yellow;
+    animation: popup-animation 2s ease-in-out;
+    z-index: 20;
+  }
+}

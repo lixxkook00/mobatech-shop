@@ -1,0 +1,68 @@
+@import 'assets/scss/responsive';
+
+#vesting {
+  .box-nfts {
+    width: 1024px;
+    margin: 56px auto 0;
+    display: flex;
+    margin-bottom: 40px;
+    .item {
+      flex-basis: 50%;
+    }
+    .left {
+      background-color: rgba(101, 37, 26, 0.22);
+      border-radius: 5px;
+      border: 2px solid #eb8825;
+      padding: 16px 0;
+      text-align: center;
+      img {
+        max-width: 58%;
+      }
+    }
+    .right {
+      margin: 20px;
+      padding-left: 48px;
+      letter-spacing: 1.2px;
+      h1 {
+        font-size: 34px;
+        padding-top: 46px;
+        padding-bottom: 32px;
+        font-weight: 700;
+      }
+      p {
+        font-size: 16px;
+      }
+      .claim-button {
+        margin-top: 20px;
+        width: 110px;
+        height: 36px;
+        // background: url('/assets/img/button5.png') no-repeat center / 100% 100%;
+        button {
+          height: 100%;
+          width: 100%;
+          color: #fff;
+          background-color: transparent;
+          border: none;
+          outline: none;
+          font-size: 14px;
+          text-shadow: 1px 1px 2px #000;
+        }
+      }
+    }
+  }
+  @include media('screen', '<laptop') {
+    .box {
+      flex-direction: column;
+      margin-left: 12px;
+      margin-right: 12px;
+      width: calc(100% - 24px);
+      .right {
+        padding-left: 0px;
+        h1 {
+          padding-top: 32px;
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+}

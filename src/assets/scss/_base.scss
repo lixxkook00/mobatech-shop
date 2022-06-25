@@ -1,0 +1,240 @@
+@import 'assets/fonts/Montserrat/style.css';
+@import 'assets/fonts/berlinsansfb/style.css';
+@import './responsive';
+
+
+// clear default tag
+
+select:focus-visible {
+  outline: none;
+}
+
+// utils
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  letter-spacing: 1.2px;
+  line-height: 1.5;
+}
+
+body {
+  font-family: 'berlinsansfb';
+}
+
+a {
+  text-decoration: none !important;
+}
+
+// custom inline style
+
+.primary-btn {
+  border: 1px solid #00FDFF;
+  border-radius: 12px;
+  background: linear-gradient(0deg, #00FDFF -49.48%, #22C3FF -33.42%, #4190FF -17.12%, #5B64FF -0.47%, #7040FF 16.18%, #8124FF 32.82%, #8D10FF 49.5%, #9404FF 66.22%, #9600FF 83.14%, #00FDFF 173.84%, #22C3FF 188.52%, #4190FF 203.45%, #5B64FF 218.64%, #7040FF 233.88%, #8124FF 249.11%, #8D10FF 264.34%, #9404FF 279.68%, #9600FF 295.15%);
+  font-size: 14px;
+  padding: 3px;
+  margin-bottom: 4px;
+  font-weight: 600;
+  transition: all 0.5s ease-in-out;
+
+  &:hover{
+      cursor: pointer;
+      transform: scale(.95);
+  }
+}
+
+.centering{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.green-color {
+  color: #26fe21;
+}
+.yellow-color {
+  color: #fddd22;
+}
+
+.primary-tex-yellow{
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(180deg, #E792D0 -40.48%, #82D9FF 79.76%);
+}
+
+.primary-tex-gray{
+  color: #fff;
+}
+
+.primary-tex-red{
+  font-weight: 900;
+  color: #B20102;
+  text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+
+.font-weight-700{
+  font-weight: 700;
+}
+
+.font-size-18{
+  font-size: 18px;
+}
+
+.ml-10{
+  margin-left: 10px;
+}
+
+.popup-copied{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.401);
+  font-size: 20px;
+  color: #80D9FF;
+  font-weight: 900;
+
+  &-wrap{
+    transition: all 1s ease-in-out;
+    animation: open-popup 1s;
+  }
+}
+
+
+@keyframes open-popup {
+  0% {
+    transform: scale(0) ;
+    opacity: 0;
+  }
+  
+  100% {
+    opacity: 1;
+    transform: scale(1) ;
+  }
+}
+
+.MuiDrawer-modal.MuiDrawer-modal.MuiModal-root{
+  & div:nth-child(3).MuiPaper-root{
+    background-image: linear-gradient(180deg, #1a1c3b 10%, #1b4b6a 90%) !important;
+    width: 320px;
+
+    .css-1hskriy{
+      width: 100%;
+    }
+  }
+}
+
+.filter-tab{
+  padding: 0 20px;
+  width: 100%;
+  
+  .title{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    width: 100%;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(180deg, #E792D0 -40.48%, #82D9FF 79.76%);
+  }
+
+  .closebtn{
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12px;
+    border-radius: 8px;
+    background-color: rgba(67, 61, 61, 0.444);
+    svg{
+      fill: #82D9FF;
+      transition: all 0.5s ease-in-out;
+    }
+
+    &:hover{
+      cursor: pointer;
+
+      svg{
+        transform: scale(1.4) rotate(360deg);
+      }
+    }
+  }
+
+  &-content{
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &-item{
+    font-size: 16px;
+    width: 50%;
+    margin: 4px 0;
+    font-weight: 700;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(180deg, #e9e9e6 10%, #94918e 90%);
+  }
+
+ input[type=radio] {
+    width: 20px;
+    height: 20px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: #f5f5f700;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border: 2px solid rgb(143, 142, 142);
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: -2px;
+    transition: all 0.3s 0s ease;
+  }
+  input[type=radio]:hover{
+    cursor: pointer;
+  }
+  input[type=radio]:focus {
+    outline: none;
+    border: 1.3px solid #111;
+  }
+  input[type=radio]:checked {
+    background-color: #f5f5f700;
+    text-align: center;
+    border: 1.3px solid #cc00003f;
+      animation: bounce 0.15s linear;
+    -webkit-box-shadow: inset 0px 0px 0px 4px #82D9FF; 
+  }
+
+
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    
+    50% {
+      transform: scale(0.95)
+    }
+    
+    75% {
+      transform: scale(0.8);
+    }
+    
+    100% {
+      transform: scale(1);
+    }
+  }
+}
